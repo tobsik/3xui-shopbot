@@ -20,9 +20,9 @@ def create_main_menu_keyboard(user_keys: list, trial_available: bool, is_admin: 
     if trial_available and get_setting("trial_enabled") == "true":
         builder.button(text="🎁 Попробовать бесплатно", callback_data="get_trial")
 
-    builder.button(text="👤 Мой профиль", callback_data="show_profile")
+    #builder.button(text="👤 Мой профиль", callback_data="show_profile")
     builder.button(text=f"🔑 Мои ключи ({len(user_keys)})", callback_data="manage_keys")
-    builder.button(text="🤝 Реферальная программа", callback_data="show_referral_program")
+    #builder.button(text="🤝 Реферальная программа", callback_data="show_referral_program")
     builder.button(text="🆘 Поддержка", callback_data="show_help")
     builder.button(text="ℹ️ О проекте", callback_data="show_about")
     builder.button(text="❓ Как использовать", callback_data="howto_vless")
